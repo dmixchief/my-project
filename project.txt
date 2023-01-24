@@ -1,0 +1,30 @@
+
+1. To reverse a string in PHP, you can use the strrev() function:
+function reverseString($str) {
+    return strrev($str);
+}
+
+2. To find out if two strings are anagrams in PHP, you can convert them to arrays, sort them, and compare them:
+function isAnagram($str1, $str2) {
+    $str1 = str_split($str1);
+    sort($str1);
+    $str1 = implode($str1);
+
+    $str2 = str_split($str2);
+    sort($str2);
+    $str2 = implode($str2);
+
+    return ($str1 === $str2);
+}
+
+3. To find the second-largest number in an array in PHP, you can use the sort() function and then return the second to last element:
+function secondLargest($arr) {
+    sort($arr);
+    return $arr[count($arr) - 2];
+}
+
+4. To reverse an array in PHP, you can use the array_reverse() function:
+function reverseArray($arr) {
+    return array_reverse($arr);
+}
+
