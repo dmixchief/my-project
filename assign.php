@@ -26,3 +26,6 @@ function secondLargest($arr) {
 }
 
 //To reverse an array in PHP, you can use the array_reverse() function:
+function reverseArray($arr) {
+    return array_reverse($arr);
+}
